@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f4f4f4;
+    }
+
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .teacher-profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .teacher-profile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .teacher-profile h2 {
+        margin: 0;
+    }
+
+    .team-tree {
+        display: flex;
+        align-items: center;
+    }
+
+    .team-member {
+        margin: 0 30px;
+        text-align: center;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .team-member h3 {
+        margin: 5px 0;
+    }
+
+    .linkedin-icon {
+        color: #0077B5;
+        font-size: 24px;
+        margin-bottom: 10px;
+    
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    width: 100%;
+    z-index: 999;
+}
+
+.navlinks a {
+    padding-right: 30px;
+    row-gap: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navlinks a:hover {
+    color: #dacece; /* Change background color on hover */
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="logo"> <a href="index.html" class="logo">Learn.Ai</a></h2>
+        
+        
+        <div class="navlinks">
+        <a href="Courses.html" class="nav-link">COURSES</a>
+        <a href="About.html" class="nav-link">ABOUT</a>
+        
+    </div>
+</nav>
+<div class="team-container">
+    <div class="teacher-profile">
+        <img src="Images/Madam.webp" alt="Teacher Photo">
+        <div class="teacher-info">
+            <h2>Prof Chitralekha Diwedi</h2>
+            <a href="https://www.linkedin.com/in/johndoe" target="_blank" class="linkedin-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="team-tree">
+        <div class="team-member">
+            <img src="Images/Student1.jfif" alt="Student 1">
+            <h3>Aditya Pradhan</h3>
+            <a href="https://www.linkedin.com/in/aditya-pradhan-b73901253/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="team-member">
+            <img src="Images/Student2.jfif" alt="Student 2">
+            <h3>Prithviraj Patil
+            </h3>
+            <a href="https://www.linkedin.com/in/prithviraj-patil-324b40242/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="team-member">
+            <img src="Images/Student3.jfif" alt="Student 3">
+            <h3>Pratham Patel</h3>
+            <a href="https://www.linkedin.com/in/pratham-patel-b3865a257/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="team-member">
+            <img src="Images/Student4.png" alt="Student 3">
+            <h3>Mayuresh Patil</h3>
+            <a href="https://www.linkedin.com/in/student3" target="_blank" class="linkedin-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</body>
+</html>

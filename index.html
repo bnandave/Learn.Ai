@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <!---Navbar-->
+    <nav class="navbar">
+        <h2 class="logo"> <a href="index.html" class="logo">Learn.Ai</a></h2>
+        
+        
+        <div class="navlinks">
+        <a href="Courses.html" class="nav-link">COURSES</a>
+        <a href="About.html" class="nav-link">ABOUT</a>
+        <a href="Team.html" class="nav-link">TEAM</a>
+    </div>
+      </nav>
+      <div class="flyer">
+        <img src="Images/flyer.jpg" > <!-- Adjust width and height values as needed -->
+        <div class="blur"><P>Explore our Latest Courses here</P>
+       <a href="Courses.html"> <button class="iridiscent">Go to Courses</button></a>
+        <P class="quote">" Great Things Takes Time Keep Building, Keep Learning  "</P>
+        </div>
+    </div>
+<div>
+    <div class="Testimonial-name"><h2>  Testimonial</h2></div><div class="testimonial-slider">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+    <div class="testimonial">
+      <img src="Images/tesi.jpg" alt="Customer 1">
+      <p>"Thank you for the amazing service!"</p>
+    </div>
+    <div class="testimonial">
+      <img src="Images/test2.jpg" alt="Customer 2">
+      <p>"I'm impressed with the quality of your products."</p>
+    </div>
+    <div class="testimonial">
+      <img src="Images/test3.jpg" alt="Customer 3">
+      <p>"Your team has been incredibly helpful."</p>
+    </div>
+
+</div>
+
+    
+<div class="footer">
+    <h1>Learn.Ai</h1>
+    <div class="socials"><a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a></div>
+        <h4>© 2024 Copyright: Learn.Ai</h4>
+
+</div>
+<div>
+    <audio id="myAudio" src="Song.mp3" preload="auto"></audio>
+
+</div>
+</body>
+<script src="swiper.js"></script>
+
+<script>
+     document.getElementById('playAudio').addEventListener('click', function() {
+            var audio = document.getElementById('myAudio');
+            if (audio.paused) {
+                audio.play();
+                document.getElementById('playAudio').innerHTML = '<h2 class="play">.</h2>';
+            } else {
+                audio.pause();
+                document.getElementById('playAudio').innerHTML = '<h2 class="play">..</h2>';
+            }
+        });
+</script>
+
+
+</html>

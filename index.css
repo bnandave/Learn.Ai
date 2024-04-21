@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.navlinks a {
+    padding-right: 30px;
+    row-gap: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #dacece; /* Change background color on hover */
+}
+
+.flyer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo a{
+    text-decoration: none;
+
+}
+.logo a:hover{
+    color: #5b548a;
+    font-size: 25px;
+}
+
+/* Logo Animation */
+
+  .blur{
+    height: 260px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.651);
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    border-radius: 10px;
+  }
+  p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    font-weight: bolder;
+  }
+/* 
+ Button */
+ :root {
+    --purple: #799df1;
+    --light-blue: #60c1ec;
+    --green: #7bd9de;
+    --pink: #cfb0d2;
+    --grey: #c7c8c9;
+    --shine: #f7f7f6;
+    --black: #000;
+  }
+  
+  
+  .iridiscent {
+    position: relative;
+    top: 45px;
+    left: 90px;
+    z-index: 0;
+    padding: 1rem 3rem;
+    border: 1px solid var(--purple);
+    border-radius: 9999px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--black);
+    box-shadow: inset 0 0 1rem 0 var(--shine);
+    cursor: pointer;
+    overflow: hidden;
+    transition: box-shadow 0.5s ease;
+    background: linear-gradient(
+      60deg,
+      var(--purple) 5%,
+      var(--light-blue) 15%,
+      var(--green) 25%,
+      var(--pink) 35%,
+      var(--purple) 45%,
+      var(--light-blue) 55%,
+      var(--green) 65%,
+      var(--pink) 75%,
+      var(--purple) 85%,
+      var(--light-blue) 95%,
+      var(--green)
+    );
+    background-size: 200% 200%;
+    background-position: -100% -100%;
+    animation: moving1 8s infinite;
+  }
+  
+  @keyframes moving1 {
+    20% {
+      background-position: -130% -120%;
+    }
+    40% {
+      background-position: -140% -100%;
+    }
+    70% {
+      background-position: -110% -130%;
+    }
+  }
+  
+  .iridiscent:before {
+    content: "";
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    width: calc(100% - 0.4rem);
+    height: calc(100% - 0.4rem);
+    border-radius: 9999px;
+    border-top: 1px solid rgba(var(--shine), 0.5);
+    border-right: 1px solid rgba(var(--shine), 0.5);
+    box-shadow: 0 0 1rem 1rem rgba(var(--grey), 0.4);
+    background: linear-gradient(180deg, transparent, var(--grey) 160%);
+    overflow: hidden;
+  }
+  
+  .iridiscent:after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(
+      150deg,
+      var(--shine),
+      transparent 20%,
+      transparent 60%,
+      var(--shine) 70%,
+      var(--shine)
+    );
+    animation: moving2 20s infinite;
+  }
+  
+  @keyframes moving2 {
+    20% {
+      transform: skewY(-10deg) translateX(20%);
+    }
+    40% {
+      transform: translateX(-10%) rotate(20deg);
+    }
+    70% {
+      transform: translateX(20%) skewX(20deg) translateY(-10%);
+    }
+  }
+  
+  .iridiscent:hover {
+    box-shadow: inset 0 0 1rem 0 var(--shine), 0 0 1rem 0 var(--shine);
+  }
+  
+  @media screen and (max-width: 450px) {
+    .iridiscent {
+      font-size: 1rem;
+    }
+  }
+  
+  .quote{
+    position: relative;
+    top: 80px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 25px;
+  }
+
+
+  /* Testimonial */
+  .testimonial-slider {
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+  }
+  
+  .testimonial {
+    display: none;
+    text-align: center;
+  }
+  
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+  }
+  
+  .testimonial p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .active {
+    display: block;
+  }
+  .next{
+    position: relative;
+    top: 80px;
+    left:700px;
+    height: 30px;
+    width: 30px;
+  }
+  .prev{
+    position: relative;
+    top: 80px;
+    height: 30px;
+    width: 30px;
+  }
+  .Testimonial-name{
+    position: relative;
+    top: 30px;
+    left: 565px;
+    
+  }
+  .Testimonial-name{
+    border: 5px solid yellow; 
+    outline: 5px solid blue;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  img{
+    width: 100%;
+    height: 500px;
+    
+  }
+  .boy{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 1100px;
+    left: 600px;
+  }
+  .girl{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 1130px;
+    left: 70px;
+  }
+  .footer{
+    position: relative;
+    top: -5px;
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    
+  }
+  .footer h1{
+    margin-left: 555px;
+    padding-top: 30px;
+  }
+  .footer h4{
+    margin-left: 530px;
+    padding-top: 60px;
+  }
+ .socials{
+    display: flex;
+    justify-content: center;
+   padding-top: 80px;
+   gap: 10px;
+ }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+    border-radius: 50%;
+
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    border-radius: 50%;
+  }
+.play{
+    position: absolute;
+    top: 1200px;
+}

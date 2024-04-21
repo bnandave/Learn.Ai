@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.navlinks a {
+    padding-right: 30px;
+    row-gap: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #dacece; /* Change background color on hover */
+}
+
+.container {
+    text-align: center;
+}
+
+#searchBar {
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    padding-right: 100px;
+    
+  }
+  
+  .card {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+
+  }
+  
+  .card img {
+    width: 150px;
+    height: 100px;
+  }
+  
+  .card-title {
+    margin-top: 10px;
+    color: #333;
+  }

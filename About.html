@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Learn.Ai</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #00feba, #5b548a);
+        }
+
+        .navlinks a {
+            padding-right: 30px;
+            row-gap: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: #dacece; /* Change background color on hover */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about-content img:hover {
+            transform: scale(1.05);
+        }
+
+        .about-content p {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .about-content p:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-content p {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #00feba, #5b548a);
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .banner {
+            background: linear-gradient(135deg, #00feba, #5b548a);
+            padding: 20px;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+
+        .banner p {
+            margin: 0;
+        }
+
+        .highlight {
+            color: #5b548a;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h2 class="logo"> <a href="index.html" class="logo">Learn.Ai</a></h2>
+    <div class="navlinks">
+        <a href="Courses.html" class="nav-link">COURSES</a>
+        
+        <a href="Team.html" class="nav-link">TEAM</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="banner">
+        <p>Learning Made Simple</p>
+    </div>
+
+    <h1>About Learn.Ai</h1>
+
+    <div class="about-content">
+        <p>
+            At <span class="highlight">Learn.Ai</span>, we believe in making learning simple. Our mission is to provide
+            accessible, engaging, and effective learning solutions to empower individuals and organizations in the field
+            of <span class="highlight">Artificial Intelligence</span> and <span class="highlight">Machine Learning</span>.
+        </p>
+        
+    </div>
+
+    <p>
+        <span class="highlight">Learn.Ai</span> offers a wide range of courses and resources designed to accommodate
+        learners at every level, from beginners to professionals. Our carefully curated content covers a variety of
+        topics, including <span class="highlight">HTML</span>, <span class="highlight">React</span>, <span class="highlight">CSS</span>,
+        <span class="highlight">JavaScript</span>, and more.
+    </p>
+
+    <p>
+        Whether you are looking to start a career in AI, enhance your existing skills, or stay updated with the latest
+        advancements in the field, <span class="highlight">Learn.Ai</span> is your trusted partner in learning. Our
+        courses are developed and delivered by industry experts, ensuring that you receive high-quality education that
+        is both practical and relevant.
+    </p>
+
+    <p>
+        Join us at <span class="highlight">Learn.Ai</span> and embark on a learning journey that is simple, enjoyable,
+        and rewarding. Start mastering the skills you need to thrive in the age of artificial intelligence.
+    </p>
+
+    <a href="Courses.html" class="btn">Explore Courses</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Title</title>
+  <link rel="stylesheet" href="kotlin.css">
+  <style>
+    /* Add CSS Styles here */
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.navlinks a {
+    padding-right: 30px;
+    row-gap: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #dacece; /* Change background color on hover */
+}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+    }
+    
+    .logo {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    .navlinks {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .nav-link {
+      text-decoration: none;
+      color: #fff;
+      margin-right: 20px;
+    }
+    
+    .card-image {
+      margin-top: 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .image-box {
+     
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 800px; /* Set a maximum width */
+    }
+
+    .images-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 0; /* Adjust top and bottom padding */
+    }
+    
+    .image-link {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      width: calc(33.33% - 50px); /* Set the width of each image */
+      margin-bottom: 50px; /* Add margin bottom to each image */
+      border: 2px solid  black; /* Add border around each image */
+      padding: 10px; /* Add padding inside each image */
+    }
+    
+    .image-link img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2 class="logo"> <a href="index.html" class="logo">Learn.Ai</a></h2>
+    <div class="navlinks">
+      <a href="Courses.html" class="nav-link">COURSES</a>
+      <a href="#" class="nav-link">ABOUT</a>
+      <a href="#" class="nav-link">TEAM</a>
+    </div>
+  </nav>
+
+    <!-- Card Image Section -->
+    <div class="card-image">
+        Cloud Computing
+      </div>
+    
+      <!-- Images Section -->
+      <div class="image-box">
+        <div class="images-container">
+          <a href="https://youtu.be/EN4fEbcFZ_E?si=QiOtnU2th957azOG" class="image-link">
+            <img src="Images/youtube.png" alt="Image 1">
+          </a>
+          <a href="https://www.coursera.org/specializations/cloud-computing" class="image-link">
+            <img src="Images/coursera.png" alt="Image 2">
+          </a>
+          <a href="https://www.udemy.com/course/introduction-to-cloud-computing-on-amazon-aws-for-beginners/?couponCode=NVDPRODIN35" class="image-link">
+            <img src="Images/udemy.png" alt="Image 3">
+          </a>
+          <a href="https://github.com/topics/cloud-computing" class="image-link">
+            <img src="Images/github.png" alt="Image 4">
+          </a>
+          <a href="https://www.javatpoint.com/cloud-computing" class="image-link">
+            <img src="Images/Document.png" alt="Image 5">
+          </a>
+        </div>
+      </div>
+    
+      <script src="script.js"></script>
+    </body>
+    </html>
